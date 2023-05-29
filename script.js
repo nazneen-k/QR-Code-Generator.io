@@ -43,6 +43,8 @@ function isEmptyInput(){
 }
 
 function generateQRCode(){
+        qrContainer.innerHTML="";
+
     new QRCode(qrContainer,{
         text:qrText.value,
         height:size,
